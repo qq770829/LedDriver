@@ -57,7 +57,7 @@ public:
     uint8_t   pol:1; /*!< 1：作为MY-PWM/APDM生成器工作 0：作为LED驱动工作 */
     uint8_t   cntset:1; /*!< 1：计数器复位模式(仅当osc="1"时可用) 0：自由运行模式 */
     uint8_t   onest:1; /*!< 1：单次模式(仅当cntset="1"时可用) 0：帧周期重复模式 */
-  } __attribute__ ((packed)) Mode_t;
+  } __attribute__ ((packed)) sMode_t;
 
 public:
   MY9221SS(uint32_t pinClock, uint32_t pinData);
